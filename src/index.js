@@ -8,10 +8,10 @@ import { ModelManager } from "@adobe/aem-spa-page-model-manager";
 
 import { CustomModelClient } from './server/CustomModelClient';
 
-const modelClient = new CustomModelClient('http://localhost:4502');
+const modelClient = new CustomModelClient('http://author-p15902-e23962-cmstg.adobeaemcloud.com');
 ModelManager.initializeAsync({
     modelClient,
-    path: "/content/we-retail-journal/react/en.model.json"
+    path: "/content/editorxpdevelopment/us/en.model.json"
 });
 
 ReactDOM.render(
