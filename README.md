@@ -1,3 +1,5 @@
+Demo app is auto deployed on every commit to this repository. Available at https://sushantbhasin.github.io/spa-sample-app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
