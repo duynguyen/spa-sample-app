@@ -1,6 +1,5 @@
 import React from 'react';
-import classes from '../styles/common.css';
-import {withMappable} from '@adobe/aem-react-editable-components';
+import { withMappable } from '@adobe/aem-react-editable-components';
 
 export const TextEditConfig = {
     emptyLabel: 'Text',
