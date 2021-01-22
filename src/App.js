@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import AEMPage from './components/AEMPage';
+import { AEMText } from './components/Text';
 
 const App = () => {
   return (
     <div className="App">
-      <AEMPage />
+      <AEMText pagePath="/content/editorxpdevelopment/us/en" itemPath="/root/responsivegrid/text"/>
+      <AEMText pagePath="/content/editorxpdevelopment/us/en" itemPath="/root/responsivegrid/text_23"/>
     </div>
   );
 }
