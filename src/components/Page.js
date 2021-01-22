@@ -1,9 +1,9 @@
-import { Page, MapTo, withModel } from '@adobe/aem-react-editable-components';
+import {
+    Page, MapTo, withMappable, ResponsiveGrid
+} from '@adobe/aem-react-editable-components';
 import Text, { TextEditConfig } from './Text';
-import Navigation from './Navigation';
 
+export default withMappable(Page);
 
-export default withModel(Page, { injectPropsOnInit: true });
-
-MapTo("we-retail-journal/components/navigation")(Navigation);
-MapTo('we-retail-journal/components/text')(Text, TextEditConfig);
+MapTo('editorxpdevelopment/components/content/text')(Text, TextEditConfig);
+MapTo('wcm/foundation/components/responsivegrid')(ResponsiveGrid);

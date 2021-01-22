@@ -10,8 +10,7 @@ import { CustomModelClient } from './server/CustomModelClient';
 
 const modelClient = new CustomModelClient('https://author-p15902-e23962-cmstg.adobeaemcloud.com');
 ModelManager.initializeAsync({
-    modelClient,
-    path: "/content/editorxpdevelopment/us/en.model.json"
+    modelClient
 });
 
 ReactDOM.render(
