@@ -8,7 +8,7 @@ import { ModelManager } from "@adobe/aem-spa-page-model-manager";
 
 import { CustomModelClient } from './server/CustomModelClient';
 
-const modelClient = new CustomModelClient('http://publish-p15902-e23962-cmstg.adobeaemcloud.com');
+const modelClient = new CustomModelClient('https://publish-p15902-e23962-cmstg.adobeaemcloud.com');
 ModelManager.initializeAsync({
     modelClient
 });
