@@ -6,7 +6,7 @@ export const TextEditConfig = {
     isEmpty: function(props) {
         return !props || !props.text || props.text.trim().length < 1;
     },
-    resourceType: "editorxpdevelopment/components/content/text"
+    resourceType: "wknd-spa-react/components/text"
 };
 
 const Text = ({ cqPath, richText, text }) => {

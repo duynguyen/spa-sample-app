@@ -10,9 +10,6 @@ const AEMPage = () => (
         <SampleContent />
 
         <h4>Leaf component from AEM</h4>
-        <AEMText
-          pagePath="/content/wknd-spa-react/test"
-          itemPath="/root/responsivegrid/text" />
     </main>
 );
 
