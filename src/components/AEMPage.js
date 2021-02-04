@@ -6,7 +6,7 @@ import SampleContent from './SampleContent';
 const AEMPage = () => (
     <main>
         <h2>Sample AEM + SPA</h2>
-        <Page pagePath="/content/editorxpdevelopment/us/en" />
+        <Page pagePath="/content/wknd-spa-react/test" />
         <SampleContent />
 
         <h4>Leaf component from AEM</h4>
