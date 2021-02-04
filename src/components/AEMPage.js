@@ -6,7 +6,7 @@ const AEMPage = () => (
     <main>
         <h2>Sample AEM + SPA</h2>
         <AEMText
-          pagePath="/content/editorxpdevelopment/us/en"
+          pagePath="/content/wknd-spa-react/test"
           itemPath="/root/responsivegrid/text" />
         <SampleContent />
     </main>
