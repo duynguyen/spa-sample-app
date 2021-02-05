@@ -1,5 +1,5 @@
 import {
-    Page, MapTo, withMappable, ResponsiveGrid, Image
+    Page, MapTo, withMappable, ResponsiveGrid
 } from '@adobe/aem-react-editable-components';
 import Text, { TextEditConfig } from './Text';
 
