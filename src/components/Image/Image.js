@@ -23,9 +23,9 @@ export default class Image extends Component {
     }
 
     render() {
-        if(ImageEditConfig.isEmpty(this.props)) {
-            return null;
-        }
+        // if(ImageEditConfig.isEmpty(this.props)) {
+        //     return null;
+        // }
 
         return (
                 <div className="Image">
