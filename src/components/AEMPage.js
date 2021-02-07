@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from './Page';
 import SampleContent from './SampleContent';
-import { AEM_PAGE_PATH } from '../../AEM_Const';
+import { AEM_PAGE_PATH } from '../AEM_Const';
 
 const style = {
     backgroundColor: 'rgb(142 218 214)',
