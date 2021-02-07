@@ -18,8 +18,8 @@ export default class Image extends Component {
         }
 
         return (
-            <div style={{height: "400px"}}>
-                <img
+            <div>
+                <img style={{height: "400px"}}
                     src={AEM_HOST + this.props.src}
                     alt={this.props.alt}
                     title={this.props.title ? this.props.title : this.props.alt}/>
