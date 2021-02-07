@@ -1,7 +1,15 @@
 import React from 'react';
 
+const style = {
+    backgroundColor: 'rgb(133, 226, 109)',
+    margin: '10px auto',
+    padding: '10px 50px',
+    font: '18pt/1.5 Courier',
+    maxWidth: '800px'
+};
+
 const SampleContent = () => (
-    <div style={{backgroundColor: '#aaa', margin: '10px', padding: '10px'}}>
+    <div style={style}>
         <h4>Now, back to our SPA</h4>
         <p>
             Now it is such a bizarrely improbable coincidence that anything so mind-bogglingly useful could have evolved purely by chance that some thinkers have chosen to see it as the final and clinching proof of the non-existence of God.

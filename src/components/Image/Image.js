@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import {AEM_HOST} from "../../AEM_Const";
+import React, { Component } from 'react';
+import { AEM_HOST } from '../../AEM_Const';
 
 export const ImageEditConfig = {
-
     emptyLabel: 'Image',
 
     isEmpty: function (props) {
@@ -11,7 +10,6 @@ export const ImageEditConfig = {
 };
 
 export default class Image extends Component {
-
     render() {
         if (ImageEditConfig.isEmpty(this.props)) {
             return null;
@@ -27,4 +25,3 @@ export default class Image extends Component {
         );
     }
 }
-

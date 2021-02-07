@@ -5,9 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { ModelManager } from "@adobe/aem-spa-page-model-manager";
-
 import { CustomModelClient } from './server/CustomModelClient';
-import {AEM_HOST} from "./AEM_Const";
+import { AEM_HOST } from "./AEM_Const";
 
 const modelClient = new CustomModelClient(AEM_HOST);
 ModelManager.initializeAsync({

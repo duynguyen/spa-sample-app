@@ -8,7 +8,6 @@ const FETCH_CONFIG = {
  * Custom ModelClient meant to demonstrate how to customize the request sent to the remote server
  */
 export class CustomModelClient extends ModelClient {
-
     /**
      * Fetches a model using the given a resource path
      *
@@ -23,13 +22,14 @@ export class CustomModelClient extends ModelClient {
 
         // Either the API host has been provided or we make an absolute request relative to the current host
         const url = `${this._apiHost}${modelPath}`;
+
         return fetch(url, FETCH_CONFIG).then(function(response) {
             if (response.status >= 200 && response.status < 300) {
-             return response.json();
+                return response.json();
             } else {
                 const error = new Error('while fetching the model for url: ' + url, response.statusText || response.status);
                 error.response = response;
-               return Promise.reject(error);
+                return Promise.reject(error);
             }
         });
     }
