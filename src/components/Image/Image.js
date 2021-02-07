@@ -14,14 +14,6 @@ export const ImageEditConfig = {
 
 export default class Image extends Component {
 
-    get content() {
-        return <img
-                className="Image-src"
-                src={this.props.src}
-                alt={this.props.alt}
-                title={this.props.title ? this.props.title : this.props.alt} />;
-    }
-
     render() {
         // if(ImageEditConfig.isEmpty(this.props)) {
         //     return null;
@@ -29,7 +21,11 @@ export default class Image extends Component {
 
         return (
                 <div className="Image">
-                    {this.content}
+                    <img
+                        className="Image-src"
+                        src={this.props.src}
+                        alt={this.props.alt}
+                        title={this.props.title ? this.props.title : this.props.alt} />;
                 </div>
         );
     }
