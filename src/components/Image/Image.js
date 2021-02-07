@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.scss');
 
@@ -31,4 +30,3 @@ export default class Image extends Component {
     }
 }
 
-MapTo('wknd-spa-react/components/image')(Image, ImageEditConfig);
