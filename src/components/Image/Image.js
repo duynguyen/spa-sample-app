@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-require('./Image.scss');
-
 export const ImageEditConfig = {
 
     emptyLabel: 'Image',
