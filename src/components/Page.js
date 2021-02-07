@@ -6,7 +6,7 @@ import Image, {ImageEditConfig} from "./Image/Image";
 
 export default withMappable(Page);
 
-MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+MapTo('editorxpdevelopment/components/content/text')(Text, TextEditConfig);
 MapTo('wcm/foundation/components/responsivegrid')(ResponsiveGrid);
-MapTo('wknd-spa-react/components/image')(Image, ImageEditConfig);
+MapTo('editorxpdevelopment/components/content/image')(Image, ImageEditConfig);
 
