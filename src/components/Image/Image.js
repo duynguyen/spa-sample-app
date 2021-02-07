@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import {AEM_HOST} from "../../AEM_Const";
 
 export const ImageEditConfig = {
 
     emptyLabel: 'Image',
 
-    isEmpty: function(props) {
+    isEmpty: function (props) {
         return !props || !props.src || props.src.trim().length < 1;
     }
 };
@@ -12,18 +13,17 @@ export const ImageEditConfig = {
 export default class Image extends Component {
 
     render() {
-        // if(ImageEditConfig.isEmpty(this.props)) {
-        //     return null;
-        // }
+        if (ImageEditConfig.isEmpty(this.props)) {
+            return null;
+        }
 
         return (
-                <div className="Image">
-                    <img
-                        className="Image-src"
-                        src={this.props.src}
-                        alt={this.props.alt}
-                        title={this.props.title ? this.props.title : this.props.alt} />;
-                </div>
+            <div style={{height: "400px"}}>
+                <img
+                    src={AEM_HOST + this.props.src}
+                    alt={this.props.alt}
+                    title={this.props.title ? this.props.title : this.props.alt}/>
+            </div>
         );
     }
 }
